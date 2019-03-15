@@ -1,3 +1,5 @@
+// Finds the maximum and minimum values in milesTracker which is a 2D array
+
 import java.util.Scanner;
 
 public class ArraysKeyValue {
