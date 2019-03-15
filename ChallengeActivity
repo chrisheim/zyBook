@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class ArraysKeyValue {
+   public static void main (String [] args) {
+      final int NUM_ROWS = 2;
+      final int NUM_COLS = 2;
+      int [][] milesTracker = new int[NUM_ROWS][NUM_COLS];
+      int i;
+      int j;
+      int maxMiles; // Assign with first element in milesTracker before loop
+      int minMiles; // Assign with first element in milesTracker before loop
+
+      milesTracker[0][0] = -10;
+      milesTracker[0][1] = 20;
+      milesTracker[1][0] = 30;
+      milesTracker[1][1] = 40;
+
+      maxMiles = milesTracker[0][0]; // Assigns the first element in the array with maxMiles
+      minMiles = milesTracker[0][0]; // Assigns the first element in the array with minMiles
+      for (i = 0; i < NUM_ROWS; i++) {
+         for (j = 0; j < NUM_COLS; j++) { // Two for loops to go through each number in every row and column
+            if (milesTracker[i][j] > maxMiles) {
+               maxMiles = milesTracker[i][j];
+            }
+
+            else if (milesTracker[i][j] < minMiles) {
+               minMiles = milesTracker[i][j]; // While going through each number, compares each number to finally give us the maximum and minimum value
+            }
+         }
+      }
+
+      System.out.println("Min miles: " + minMiles);
+      System.out.println("Max miles: " + maxMiles);
+   }
+}
+
+Testing with milesTracker = {{-10, 20}, {30, 40}}
+Your output: Min miles: -10
+             Max miles: 40Testing with milesTracker = {{-10, 20}, {30, 40}}
+Your output
+Min miles: -10
+Max miles: 40
+Testing with milesTracker = {{73, 0}}
+Your output
+Min miles: 0
+Max miles: 73
+Testing with milesTracker = {{-5}, {-93}, {-259}}
+Your output
+Min miles: -259
+Max miles: -5
+
+             
+Testing with milesTracker = {{73, 0}}
+Your output: Min miles: 0
+             Max miles: 73
+             
+Testing with milesTracker = {{-5}, {-93}, {-259}}
+Your output: Min miles: -259
+             Max miles: -5
