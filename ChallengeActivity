@@ -36,19 +36,7 @@ public class ArraysKeyValue {
 
 Testing with milesTracker = {{-10, 20}, {30, 40}}
 Your output: Min miles: -10
-             Max miles: 40Testing with milesTracker = {{-10, 20}, {30, 40}}
-Your output
-Min miles: -10
-Max miles: 40
-Testing with milesTracker = {{73, 0}}
-Your output
-Min miles: 0
-Max miles: 73
-Testing with milesTracker = {{-5}, {-93}, {-259}}
-Your output
-Min miles: -259
-Max miles: -5
-
+             Max miles: 40
              
 Testing with milesTracker = {{73, 0}}
 Your output: Min miles: 0
